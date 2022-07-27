@@ -1,0 +1,201 @@
+<html>
+  <head>
+    <title>
+      Sign up
+    </title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        display : flex;
+        flex-direction: column;
+        padding: 16px;
+        background-color: white;
+      }
+      
+      .right h1{
+        margin-top: -20%;
+        margin-bottom: 15%;
+        margin-left: 45%;
+        color: orange;
+      }
+     
+      .left{
+        height: 200px;
+       
+      }
+      .left, .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .left {
+        
+        background: url('images/signup.jpg');
+        background-size: cover;
+        
+    }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        height: 5px;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border-left : none;
+        border-right: none;
+        border-top: none;
+        border-bottom: 1px solid #999;
+         outline: none;
+        background: transparent;
+        
+      }
+      input[type="text"]:focus,
+      input[type="email"]:focus,
+      input[type="password"]:focus {
+       
+        outline: none;
+        
+      }
+      .registerbtn {
+        background-color: blue;
+        color: white;
+        padding: 16px 20px;
+        margin: 8px;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+      }
+      
+      .registerbtn:hover {
+        opacity: 1;
+      }
+      .registerbtn1 {
+        border: none;
+        color: black;
+        margin-left: 17%;
+        margin-top: -8%;
+        background-color: white;
+        font-size: medium;
+        font-weight: 100;
+       border-bottom: 1px;
+       border-color: black;
+       text-decoration: underline;
+       text-decoration-color: blue;
+       cursor: pointer;
+        width: 35%;
+      
+      }
+      .registerbtn2 {
+        
+        color: black;
+        font-size: medium;
+        font-weight: 100;
+        background-color: white;
+        border: none;
+        width: 35%;
+        margin-top: -8%;
+        margin-bottom: -3%;
+        margin-left: 60%;
+        opacity: 0.9;
+        text-decoration: underline;
+        cursor: pointer;
+        text-decoration-color: blue;
+        
+      }
+      
+      .login{
+          background: whitesmoke;
+          text-align: center;
+
+      }
+      .right b{
+       color: orange;
+       
+       
+      }
+      .login a{
+        
+        cursor: pointer;
+        
+        color: orange;
+      }
+      
+      .container img{
+             position: center;
+             margin-top: 10px;
+    
+          margin-bottom: 36%;
+            height: 10%;
+            width: 50%;
+            margin-left: 30%;
+           
+            }
+      @media screen and (min-width : 900px) {
+        .container{
+            flex-direction: row;
+            height: 100vh;
+            width: 100%;
+        }
+        .left{
+            display: flex;
+            width: 150%;
+            height: auto;
+        }
+        .right{
+            display: flex;
+            width: 100%;
+            height: auto;
+        }
+        
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="container">
+        <div class="left">
+            <section class="copy">
+               
+            </section>
+         </div>
+        <div class="right">
+      <form>
+        <section class="copy">
+           
+                <img src="images/logo.jpg " >
+           
+        <h1>Sign In</h1>
+        <button class="registerbtn1">Admin</button>
+        <button class="registerbtn2">User</button>
+        
+        </section>
+        <br />
+        
+        <input type="text" class="input-field" placeholder="Username" required/>
+        
+        <br />
+       
+        <input type="password" class="input-field" placeholder="Password" required/>
+        <p><input type="checkbox" >RememberPassword &nbsp;
+            <b href="#">Forget password</b>
+               </p>
+         <button class="registerbtn">Sign In</button>
+      
+        <div class="login">
+            <p>
+               Create an Account?<a href="signup.html">SIGNUP</a>
+              </p>
+        
+        </div>
+      </form>
+    </div>
+</div>
+  </body>
+</html>
